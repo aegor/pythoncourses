@@ -1,4 +1,4 @@
-from PeeWeeTest import *
+from controller_peewee_test import *
 import pickle
 
 people1 = People(firstName='Иван', is_relative=True)
@@ -7,7 +7,7 @@ people3 = People(firstName='Гриша', is_relative=False)
 people4 = People(firstName='Толя', is_relative=True)
 people5 = People(firstName='Коля', is_relative=False)
 
-f = open("example", "wb")
+f = open("example", "wba")
 pickle.dump(people1, f)
 pickle.dump(people2, f)
 pickle.dump(people3, f)
